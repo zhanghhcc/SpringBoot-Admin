@@ -31,4 +31,12 @@ public interface RoleService extends IService<Role>
      * @return
      */
     List<Role> getAll(HashMap params);
+
+    /**
+     * 改变角色
+     * @return
+     */
+    Boolean changeRole();
+
+
 }

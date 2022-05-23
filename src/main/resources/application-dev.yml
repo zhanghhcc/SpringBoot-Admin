@@ -22,9 +22,9 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/spba?serverTimezone=UTC&useUniode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+      url: jdbc:mysql://192.168.100.101:3306/spba?serverTimezone=UTC&useUniode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
       username: root
-      password: abc123456
+      password: root
       # 初始连接数
       initial-size: 2
       # 最小连接池数量
@@ -47,7 +47,7 @@ spring:
   # redis配置
   redis:
     database: 0
-    host: 127.0.0.1
+    host: 192.168.100.101
     port: 6379
     password:
     timeout: 10000
@@ -64,7 +64,7 @@ spring:
   # elasticsearch配置
   elasticsearch:
     rest:
-      uris: 127.0.0.1:9200
+      uris: 192.168.100.101:9200
 
 # mybatis-plus配置
 mybatis-plus:
